@@ -7,8 +7,11 @@ import './App.css'
 const App = () => {
   return (
     <div className = "App">
-    <Sidebar />
-    <Footer />
+      <div className='page-wrapper'>
+        <Sidebar />
+      <div className ='main-content'>Syncify</div>
+      </div>
+      <Footer />
     </div>
   )
 }
