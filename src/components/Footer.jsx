@@ -2,6 +2,7 @@ import "../App.css"
 import { FooterContents } from "./FooterContents"
 
 function Footer() {
+    
     return( <div className= "Footer">
         <ul className = "FooterContents">
             {FooterContents.map((val,key) => {
