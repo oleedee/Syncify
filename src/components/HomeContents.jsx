@@ -9,6 +9,10 @@ export const HomeContents = [
         title: 'Import From Streaming Service',
         link: 'import'
     },
-    
+
+    {
+        title: 'View Playlist',
+        link: 'view'
+    },  
 
 ]
