@@ -12,7 +12,7 @@ export const SidebarData = [
     {
         title: "HOME",
         icon: <HomeOutlinedIcon fontSize='large'/>,
-        link: "/home"
+        link: "/"
     },
     {
         title: "SETTINGS",
