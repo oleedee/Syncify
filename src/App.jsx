@@ -1,6 +1,7 @@
 import Sidebar from "./components/Sidebar";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
+import About from "./components/About";
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import './App.css';
 
@@ -13,6 +14,7 @@ const App = () => {
       <div className ='main-content'>
         <Routes>
           <Route path = "/" element={<Home/>} />
+          <Route path = "/about" element={<About/>} />
         </Routes>
         </div>
       </div>

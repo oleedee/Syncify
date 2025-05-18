@@ -1,7 +1,10 @@
 import "../App.css"
 import { HomeContents } from "./HomeContents"
+import { useNavigate } from "react-router-dom"
 
 function Home ()  {
+    const navigate = useNavigate();
+
     return (
         <div className = "Home"> 
         <div className = "Title">Syncify</div>
@@ -10,7 +13,7 @@ function Home ()  {
                     return(
                         <li key = {key}
                         className = "box"
-                        onClick={() => {window.location.pathname = val.link;
+                        onClick={() => {navigate(val.link);
                         }}>
                             <div>{val.title}</div>
                         </li>
