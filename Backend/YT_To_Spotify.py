@@ -17,3 +17,14 @@ def transfer_playlist(source, destination, playlist_):
 
     user_id = sp.me()["id"]
     playlist = sp.user_playlist_create(user=user_id, name="Transfered Playlist from Youtube")
+    sp.playlist_add_items(playlist_id=playlist["id"], items=uris)
+
+    return{
+        "playlist_name": playlist["name"],
+        "playlist_url": playlist["external_urls"]["Spotify"],
+        "track_count": len(uris)
+    }
+
+
+def mock_fetch_youtube_tracks(playlist_id):
+    return["Song 1 - Artist A", "Song 2 - Artist B"]
