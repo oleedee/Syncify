@@ -1,4 +1,5 @@
-import spotipy
+import spotipy,time
+from flask import session, url_for, flash, redirect
 from spotipy.oauth2 import SpotifyOAuth
 import os
 from dotenv import load_dotenv
@@ -24,5 +25,11 @@ def check_spot():
     
     session['spot_token_info'] = token_info
 
-
+def create_spotify_oauth():
+    return SpotifyOAuth(
+                client_id=CLIENT_ID,
+                client_secret= CLIENT_SECRET,
+                redirect_uri=url_for('redirectSpotify', _external=True),
+                scope='playlist-read-private playlist-modify-private playlist-modify-public user-library-read')
+    
 
