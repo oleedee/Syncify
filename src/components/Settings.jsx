@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import LaunchIcon from '@mui/icons-material/Launch';
 
-const services = ['Spotify', 'Youtube', 'Soundcloud', 'Deezer', 'Jamendo']
+const services = ['Spotify', 'YouTube', 'Soundcloud', 'Deezer', 'Jamendo']
 
 
 function Settings() {
@@ -18,14 +18,6 @@ function Settings() {
                 </div>
             </div>
             ))}
-
-            <div className = "Link"> 
-                <div>YouTube</div> 
-                <div className = "LinkArea">
-                <div>unlinked</div>
-                <div className = "LinkButton">Link Now<LaunchIcon/></div>
-                </div>
-            </div>
         </div>
 
         <br/>
