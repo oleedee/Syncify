@@ -4,16 +4,18 @@ import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 
 export const SidebarData = [
+        {
+        title: "HOME",
+        icon: <HomeOutlinedIcon fontSize='large'/>,
+        link: "/"
+    },
+    
     {
         title: "PROFILE",
         icon: <PersonOutlinedIcon fontSize='large' />,
         link: "/profile"
     },
-    {
-        title: "HOME",
-        icon: <HomeOutlinedIcon fontSize='large'/>,
-        link: "/"
-    },
+
     {
         title: "SETTINGS",
         icon: <SettingsOutlinedIcon fontSize='large'/>,
