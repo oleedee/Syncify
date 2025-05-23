@@ -194,3 +194,50 @@
   margin-bottom: 90px;
 }
 
+.Services {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1;
+  gap: 10px;
+  font-size: 16px;
+}
+
+.Link {
+  flex-direction: row;
+  display:flex;
+  gap: 475px;
+}
+
+.LinkArea {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 40px;
+  color: #6B6B6B;
+  font-style: italic;
+}
+
+.LinkButton {
+  font-size: 12px;
+  font-style: italic;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  gap: 15px;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 15px;
+  border-color: white;
+  color: white;
+}
+
+.LinkButton:hover {
+  color: black;
+  background-color: white;
+}
+
