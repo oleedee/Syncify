@@ -10,11 +10,19 @@ function Profile() {
                 <div className='User'></div>
                 <div className='User-info'>
                 <div className='Username'>User</div>
-                <div style={{fontSize : 10}}># Playlists • Syncing Since 20XX • Connected to # Services</div>
+                <div style={{fontSize : 15}}># Playlists • Syncing Since 20XX • Connected to # Services</div>
                 </div>
             </div>
             
-            <div>Linked Accounts</div>
+            <div className="Linked-Accs">Linked Accounts
+                <div className = "Services">
+                    <div className = "Service">Spotify</div>
+                    <div className = "Service">Spotify</div>
+                    <div className = "Service">Spotify</div>
+                    <div className = "Service">Spotify</div>
+                    <div className = "Service">Spotify</div>
+                    </div>
+            </div>
             <div className = "Playlist-box">
                 <div>Playlists</div><div>See All</div>
                 </div>
