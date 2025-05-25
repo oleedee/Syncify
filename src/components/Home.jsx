@@ -2,6 +2,7 @@ import "../App.css"
 import { HomeContents } from "./HomeContents"
 import { useNavigate } from "react-router-dom"
 
+
 function Home ()  {
     const navigate = useNavigate();
 

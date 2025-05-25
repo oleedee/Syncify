@@ -311,3 +311,17 @@
   width: 200px;
 }
 
+.ViewPlaylists {
+  overflow: auto;
+  scrollbar-color: rgb(118, 117, 117) #0D0D0D;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: flex-start;
+  height: 100%;
+  gap: 0px 20px;
+  flex: 1;
+}
+
+
+
