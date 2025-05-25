@@ -4,6 +4,8 @@ import "../App.css"
 
 function View() {
 const navigate = useNavigate();
+const [search, setSearch] = useState('')
+
 const playlists = [
     {
         name: 'Hip-Hop',
@@ -47,15 +49,26 @@ const playlists = [
 
         {
         name: 'Instrumental',
-        link: '/playlist4'
+        link: '/playlist9'
+    },
+
+        {
+        name: 'Dubstep',
+        link: '/playlist10'
     },
 ]
     
 return ( 
-        <div className = "Home"> 
+        <div className = "View"> 
         <div className = "Title">View</div>
+        <div className = "search-wrapper">
+            <label for = "search">Search Playlists</label> <br/>
+            <input type = "search" id = "search" onChange={(e) => setSearch(e.target.value)}></input>
+        </div>
             <ul className = "ViewPlaylists">
-                {playlists.map((playlist, key) => {
+                {playlists.filter((pl) => {
+                    return search.toLowerCase() === '' ? pl : pl.name.toLowerCase().includes(search);
+                }).map((playlist, key) => {
                     return(
                         <li key = {key}
                         className = "box"
