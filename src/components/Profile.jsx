@@ -4,7 +4,7 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 function Profile() {
     return <div className = 'Profile'>
         <div className="Title">Profile</div>
-        <div className ="Profilebox">
+        <div className ="Centerbox">
             <div className = "User-area">
 
                 <div className='User'></div>
@@ -17,10 +17,10 @@ function Profile() {
             <div className="Linked-Accs">Linked Accounts
                 <div className = "Services">
                     <div className = "Service">Spotify</div>
-                    <div className = "Service">Spotify</div>
-                    <div className = "Service">Spotify</div>
-                    <div className = "Service">Spotify</div>
-                    <div className = "Service">Spotify</div>
+                    <div className = "Service">YouTube</div>
+                    <div className = "Service">Soundcloud</div>
+                    <div className = "Service">Deezer</div>
+                    <div className = "Service">Jamendo</div>
                     </div>
             </div>
             <div className = "Playlist-box">
