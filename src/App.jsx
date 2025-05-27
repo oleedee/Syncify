@@ -5,6 +5,7 @@ import About from "./components/About";
 import Settings from "./components/Settings";
 import Profile from "./components/Profile";
 import View from "./components/View";
+import Create from "./components/Create";
 
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import './App.css';
@@ -22,6 +23,7 @@ const App = () => {
           <Route path = "/settings" element={<Settings/>} />
           <Route path = "/profile" element={<Profile/>} />
           <Route path = "/view" element={<View/>} />
+          <Route path = "/create" element={<Create/>}/>
         </Routes>
         </div>
       </div>
