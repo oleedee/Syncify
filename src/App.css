@@ -335,4 +335,15 @@ input {
   border-radius: 8px;
 }
 
+.playlist-input {
+  width: 500px;
+  font-weight: 100;
+  color:white;
+}
+
+.addSong {
+  color: white;
+  text-align: left;
+  cursor: pointer;
+}
 
