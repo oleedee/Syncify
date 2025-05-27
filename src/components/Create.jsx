@@ -18,6 +18,12 @@ function Create() {
   const addSong = () => {
     setPlaylist([...playlist, ['','']])
   }
+
+  const deleteSong = (index) => {
+    const updated = [...playlist];
+    updated.splice(index, 1);
+    setPlaylist(updated);
+  }
     
     return <div className = 'Create'>
         <div className="Title">Create</div>
@@ -37,7 +43,7 @@ function Create() {
                   <li key = {index}>
                   <input placeholder="Song" onChange = {(e) => changeSong(index,e.target.value, 0)}></input>
                   <input placeholder="Artist" onChange = {(e) => changeSong(index,e.target.value, 1)}></input>
-                  <RemoveCircleIcon/>
+                  <RemoveCircleIcon onClick = {(e) => deleteSong(index)}/>
                   </li>
                 )
               })}
