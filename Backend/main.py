@@ -44,5 +44,6 @@ def authorize():
 
             return render_template('', spot_auth=spot_auth, yt_auth=yt_auth)
         
-        
+# Routing for spotify playlists
+@app.route('/')
 
