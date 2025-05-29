@@ -20,6 +20,7 @@ function Create() {
   }
 
   const deleteSong = (index) => {
+    console.log(index);
     const updated = [...playlist];
     updated.splice(index, 1);
     setPlaylist(updated);
@@ -41,8 +42,8 @@ function Create() {
               {playlist.map((val, index) => {
                 return (
                   <li key = {index}>
-                  <input placeholder="Song" onChange = {(e) => changeSong(index,e.target.value, 0)}></input>
-                  <input placeholder="Artist" onChange = {(e) => changeSong(index,e.target.value, 1)}></input>
+                  <input placeholder="Song" value = {playlist[index][0]} onChange = {(e) => changeSong(index,e.target.value, 0)}></input>
+                  <input placeholder="Artist" value = {playlist[index][1]} onChange = {(e) => changeSong(index,e.target.value, 1)}></input>
                   <RemoveCircleIcon onClick = {(e) => deleteSong(index)}/>
                   </li>
                 )
