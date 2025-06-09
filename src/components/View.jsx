@@ -67,7 +67,7 @@ return (
         </div>
             <ul className = "ViewPlaylists">
                 {playlists.filter((pl) => {
-                    return search.toLowerCase() === '' ? pl : pl.name.toLowerCase().includes(search);
+                    return search.toLowerCase() === '' ? pl : pl.name.toLowerCase().includes(search.toLowerCase());
                 }).map((playlist, key) => {
                     return(
                         <li key = {key}
