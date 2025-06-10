@@ -21,7 +21,7 @@ return (
                     return(
                         <li key = {key}
                         className = "box"
-                        onClick={() => {navigate(key)}
+                        onClick={() => {navigate(key.toLowerCase())}
                         }>
                             <div>{key}</div>
                         </li>
