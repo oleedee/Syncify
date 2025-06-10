@@ -5,7 +5,8 @@ import About from "./components/About";
 import Settings from "./components/Settings";
 import Profile from "./components/Profile";
 import View from "./components/View";
-import Create from "./components/Create";
+import Playlist from "./components/Playlist";
+import Import from "./components/Import"
 
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import './App.css';
@@ -23,7 +24,8 @@ const App = () => {
           <Route path = "/settings" element={<Settings/>} />
           <Route path = "/profile" element={<Profile/>} />
           <Route path = "/view" element={<View/>} />
-          <Route path = "/create" element={<Create/>}/>
+          <Route path = "/playlist/:id" element={<Playlist/>}/>
+          <Route path = "/import" element={<Import/>}/>
         </Routes>
         </div>
       </div>

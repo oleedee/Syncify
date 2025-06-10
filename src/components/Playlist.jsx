@@ -3,7 +3,7 @@ import {useState} from 'react';
 import ControlPointIcon from '@mui/icons-material/ControlPoint';
 import RemoveCircleIcon from '@mui/icons-material/RemoveCircle';
 
-function Create() {
+function Playlist() {
   const [playlistName, setPlaylistName] = useState('');  
   const [playlist, setPlaylist] = useState([]);
 
@@ -55,4 +55,4 @@ function Create() {
         </div>
 }
 
-export default Create
+export default Playlist

@@ -2,7 +2,7 @@
 export const HomeContents = [
     {
         title: 'Create Playlist',
-        link: "/create",
+        link: "playlist/0",
     },
 
     {
