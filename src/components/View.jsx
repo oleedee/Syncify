@@ -72,7 +72,7 @@ return (
                     return(
                         <li key = {key}
                         className = "box"
-                        onClick={() => {navigate(playlist.link);
+                        onClick={() => {navigate(`/playlist/${key}`);
                         }}>
                             <div>{playlist.name}</div>
                         </li>
