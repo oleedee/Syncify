@@ -145,6 +145,7 @@ html, body {
   margin-right: 15px;
 }
 
+
 .Header {
   font-size: 25px;
   font-weight: bold;
@@ -362,5 +363,25 @@ input {
   color: white;
   text-align: left;
   cursor: pointer;
+}
+
+.import-header {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
+
+#ImportedPlaylists .Header {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: right;
+}
+
+.selected {
+  border-style: solid;
+  border-width: 1px;  
+  border-radius: 8px;
+  border-color: white;
 }
 
