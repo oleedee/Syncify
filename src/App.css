@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Inter');
 
+html, body {
+  overflow: hidden;
+}
+
 .App {
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  height: 100vh;
+  display: grid;
+  height: 100dvh;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: 1fr;
   background-color: #000000;
+  scrollbar-color: rgb(118, 117, 117) #0D0D0D;
+  overflow: hidden
 }
 
 .page-wrapper {
@@ -20,7 +26,7 @@
   color:white;
   font-family: 'Inter';
   padding: 15px;
-  overflow: hidden;
+  overflow-y: auto;
   min-height: 0;
 }
 
@@ -33,7 +39,7 @@
 .HomeContents {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   align-content: flex-start;
   height: 100%;
   gap: 0px 20px;
@@ -51,10 +57,19 @@
   justify-content: flex-start;
   align-items: flex-start;
   height: 215px;
-  width: 275px;
+  width: 250px;
   border-radius: 10px;
   overflow-y: auto;
   flex: 0 0 auto;
+}
+
+#Home .box {
+  height: 90%;
+  width: 360px;
+}
+
+#Home {
+  overflow-y: hidden;
 }
 
 .box:hover {
@@ -63,11 +78,12 @@
 }
 
 .Footer {
-  height: 10%;
+  height: 70px;
   background-color: #0D0D0D;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: auto;
 }
 
 .FooterContents {
@@ -113,7 +129,7 @@
 }
 
 .SidebarList .row:nth-child(2) {
-  margin-bottom: 180px;
+  margin-bottom: 30%px;
 }
 
 
@@ -240,6 +256,7 @@
   color: black;
   background-color: white;
 }
+
 
 .Centerbox {
   display: flex;

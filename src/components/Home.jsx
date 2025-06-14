@@ -7,7 +7,7 @@ function Home ()  {
     const navigate = useNavigate();
 
     return (
-        <div className = "Home"> 
+        <div className = "Home" id = "Home"> 
         <div className = "Title">Syncify</div>
             <ul className = "HomeContents">
                 {HomeContents.map((val, key) => {
