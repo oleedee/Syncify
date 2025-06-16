@@ -30,3 +30,11 @@ class User:
             data = doc.to_dict()
             return User(id=user_id, username=data.get("username"), email=data.get("email"))
         raise UserNotFoundError(f"No user found with ID: {user_id}")
+
+
+user = User(id=None, username="Edge", email="Edge@wwe.com")
+ref = db.collection("users").document(user.id)
+ref.set(user.to_dict())
+print(f"User saved: {user.username}.")
+
+
