@@ -78,6 +78,7 @@ return (
                 <input type = "search" id = "search" onChange={(e) => setSearch(e.target.value)}></input>
                 </div>
                 <h1 className = "Header">Please Select Playlists to Import to Syncify.</h1>
+                <button className="ImportButton" onClick={() => {alert(selected)}}>IMPORT</button>
             </div>
         </div>
             <ul className = "ViewPlaylists">

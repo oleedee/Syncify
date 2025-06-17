@@ -385,3 +385,24 @@ input {
   border-color: white;
 }
 
+.ImportButton  {
+  font-size: 15px;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  gap: 15px;
+  cursor: pointer;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  background-color: rgb(229, 229, 229);
+  border-color: rgb(229, 229, 229);
+  color: rgb(0, 0, 0);
+}
+
+.ImportButton:hover {
+  color: black;
+  background-color: white;
+}
+
