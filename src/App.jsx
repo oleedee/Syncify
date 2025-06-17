@@ -7,6 +7,7 @@ import Profile from "./components/Profile";
 import View from "./components/View";
 import Playlist from "./components/Playlist";
 import Import from "./components/Import"
+import ImportedPlaylists from "./components/ImportedPlaylists";
 
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import './App.css';
@@ -26,6 +27,7 @@ const App = () => {
           <Route path = "/view" element={<View/>} />
           <Route path = "/playlist/:id" element={<Playlist/>}/>
           <Route path = "/import" element={<Import/>}/>
+          <Route path = "/import/:id" element={<ImportedPlaylists/>}></Route>
         </Routes>
         </div>
       </div>
