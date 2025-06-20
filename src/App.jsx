@@ -8,6 +8,7 @@ import View from "./components/View";
 import Playlist from "./components/Playlist";
 import Import from "./components/Import"
 import ImportedPlaylists from "./components/ImportedPlaylists";
+import Logout from "./components/Logout";
 import { ProtectedRoute } from "./components/protectedRoute.jsx";
 import { onAuthStateChanged } from 'firebase/auth'
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
@@ -53,6 +54,7 @@ function App () {
             <Route path = "/view" element={<View/>} />
             <Route path = "/playlist/:id" element={<Playlist/>}/>
             <Route path = "/import" element={<Import/>}/>
+            <Route path = "/logout" user={user} element={<Logout/>}/>
             <Route path = "/import/:id" element={<ImportedPlaylists/>}></Route>
         </Route>
         </Routes>
