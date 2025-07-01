@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_session import Session
+from flask_cors import CORS
 
 from spotify_auth import create_spotify_oauth, get_spotify_user, check_spot
 from Yt_auth import youtube_oauth, check_yt, get_yt_user
@@ -12,6 +13,7 @@ app = Flask(__name__)
 app.config["SESSION_PERMANENT"] = False
 app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
+CORS(app)
 
 app.route('/create_user', methods=['POST'])
 def create_user():
@@ -32,7 +34,11 @@ def create_playlist():
     playlist.save()
     return jsonify({"message": "Playist created", "playlists_id": playlist.id})
 
+@app.route('/hello_world')
+def hello_word():
+    return jsonify({"message": "Hello World"})
+
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(port=8080, debug=True)

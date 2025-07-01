@@ -1,4 +1,4 @@
-from firebase import db
+from .firebase import db
 
 class UserNotFoundError(Exception):
     pass
