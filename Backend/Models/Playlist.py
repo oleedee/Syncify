@@ -1,4 +1,4 @@
-from firebase import db
+from .firebase import db
 
 class Playlist:
     def __init__(self, id=None, name=None, origin_service=None, song_json=None, user_id=None):

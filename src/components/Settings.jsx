@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import LaunchIcon from '@mui/icons-material/Launch';
+import api from "../api.js";
 
 const services = ['Spotify', 'YouTube', 'Soundcloud', 'Deezer', 'Jamendo']
 
@@ -31,7 +32,7 @@ function Settings() {
 
     const [mainContent, setMainContent] = useState(settingsContent);
 
-    const handleButtonClick = (type) => {
+    const handleButtonClick = async (type) => {
         switch(type) {
             case 'link':
                 setMainContent(settingsContent)
@@ -47,6 +48,11 @@ function Settings() {
                 break;
             case 'account':
                 setMainContent(<div>WIP</div>)
+                break;
+            case 'apiTest':
+                const response = await api.get('/hello_world');
+                console.log(response);
+                break;
         }
     }
 
@@ -58,6 +64,7 @@ function Settings() {
                         <button className = "Button" onClick = {() => handleButtonClick('link')}>Link Accounts</button>
                         <button className = "Button" onClick = {() => handleButtonClick('appearence')}>Appearance</button>
                         <button className = "Button" onClick = {() => handleButtonClick('account')}>Account</button>
+                        <button className = "Button" onClick = {() => handleButtonClick('apiTest')}>Hello World</button>
                     </div>
                 </div> 
                 <div className = "Mainbox">{mainContent}</div>
