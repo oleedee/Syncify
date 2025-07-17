@@ -47,6 +47,7 @@ function App () {
       <div className ='main-content'>
         <Routes>
           <Route path = "/" element={<Home/>} />
+          <Route path = "/Syncify" element={<Home/>} />
           <Route path = "/about" element={<About/>} />
           <Route path = "/settings" element={<Settings/>} />
           <Route element={<ProtectedRoute user={user} />}>
