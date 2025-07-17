@@ -33,6 +33,7 @@ build/
 .vscode/
 
 \.env
+Backend/Models/.env
 
 client_secret.json
 Models\syncify-1cd0d-firebase-adminsdk-fbsvc-b51414bb59.json
