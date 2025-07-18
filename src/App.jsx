@@ -16,6 +16,7 @@ import { auth } from "./firebase.js";
 import './App.css';
 import { useEffect, useState } from "react";
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { Navigate } from 'react-router-dom';
 
 
 function App () {
@@ -47,7 +48,7 @@ function App () {
       <div className ='main-content'>
         <Routes>
           <Route path = "/" element={<Home/>} />
-          <Route path = "/Syncify" element={<Home/>} />
+          <Route path="/Syncify" element={<Navigate to="/" replace />} />
           <Route path = "/about" element={<About/>} />
           <Route path = "/settings" element={<Settings/>} />
           <Route element={<ProtectedRoute user={user} />}>
